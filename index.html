@@ -22,42 +22,42 @@
 </section>
 
 <form action="https://httpbin.org/anything" method="POST">
-  <fieldset class="firstname">
+  <fieldset class="firstname item">
     <label for="firstname">First name: </label>
     <input type="text" name="firstname" id="firstname" autofocus required>
   </fieldset>
 
-  <fieldset>
+  <fieldset class="lastname item">
     <label for="lastname">Last name: </label>
     <input type="text" name="lastname" id="lastname" required>
   </fieldset>
 
-  <fieldset>
+  <fieldset class="email item">
     <label for="email">Email: </label>
     <input type="email" name="email" id="email" required>
   </fieldset>
 
-  <fieldset>
+  <fieldset class="password item">
     <label for="password">Password: </label>
     <input type="password" name="password" id="password" minlength="3" maxlength="20" required>
   </fieldset>
 
-  <fieldset>
+  <fieldset class="birthdate item">
     <label for="birthdate">Date of birth</label>
     <input type="date" name="birthdate" id="birthdate" value="2024-10-10" min="1964-10-10" max="2006-10-10" required>
   </fieldset>
 
-  <fieldset>
+  <fieldset class="cover-letter item">
     <label for="cover-letter">Tell us something about yourself</label>
     <textarea name="cover-letter" id="cover-letter" rows="3" cols="50"></textarea>
   </fieldset>
 
-  <fieldset>
+  <fieldset class="resume item">
     <label for="resume"></label>
     <input type="file" name="resume" id="resume" accept=".doc, .docx, .pdf" required>
   </fieldset>
 
-  <fieldset>
+  <fieldset class="workload item">
     <label for="fulltime">Fulltime</label>
     <input type="radio" name="workload" id="fulltime" value="fulltime" required>
     <label for="halftime">Halftime</label>
@@ -66,14 +66,14 @@
     <input type="radio" name="workload" id="either" value="either">
   </fieldset>
 
-  <fieldset>
+  <fieldset class="checkboxes item">
     <label for="terms-and-coditions">Agree to terms and contitions</label>
     <input type="checkbox" name="terms-and-coditions" id="terms-and-coditions" required>
     <label for="newsletter">Subscribe to our newsletter</label>
     <input type="checkbox" name="newsletter" id="newsletter">
   </fieldset>
 
-  <button type="submit">Skicka</button>
+  <button type="submit" class="button item">Skicka</button>
 </form>
 
 </body>
