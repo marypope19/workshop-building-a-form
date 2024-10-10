@@ -1,0 +1,24 @@
+header {
+  position: absolute;
+  width: 100%;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+header img {
+  width: 44px;
+  height: 66px;
+}
+
+.hero {
+  height: 16vw;
+  min-height: 16rem;
+  background-color: var(--color-gray-lgt);
+  background-image: url('/assets/img/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg');
+  background-position: center center;
+  background-size: cover;
+}
