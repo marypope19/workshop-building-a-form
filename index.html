@@ -8,7 +8,57 @@
 <body>
 
 <form action="https://httpbin.org/anything" method="POST">
-  <input type="text" name="firstname" id="firstname" />
+  <fieldset>
+    <label for="firstname">First name: </label>
+    <input type="text" name="firstname" id="firstname" autofocus>
+  </fieldset>
+
+  <fieldset>
+    <label for="lastname">Last name: </label>
+    <input type="text" name="lastname" id="lastname">
+  </fieldset>
+
+  <fieldset>
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email">
+  </fieldset>
+
+  <fieldset>
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" minlength="3" maxlength="20">
+  </fieldset>
+
+  <fieldset>
+    <label for="birthdate">Date of birth</label>
+    <input type="date" name="birthdate" id="birthdate" value="2024-10-10" min="1964-10-10" max="2006-10-10"></input>
+  </fieldset>
+
+  <fieldset>
+    <label for="cover-letter">Tell us something about yourself</label>
+    <textarea name="cover-letter" id="cover-letter" rows="3" cols="50"></textarea>
+  </fieldset>
+
+  <fieldset>
+    <label for="resume"></label>
+    <input type="file" name="resume" id="resume" accept=".doc, .docx, .pdf">
+  </fieldset>
+
+  <fieldset>
+    <label for="fulltime">Fulltime</label>
+    <input type="radio" name="workload" id="fulltime">
+    <label for="halftime">Halftime</label>
+    <input type="radio" name="workload" id="halftime">
+    <label for="either">Either</label>
+    <input type="radio" name="workload" id="either">
+  </fieldset>
+
+  <fieldset>
+    <label for="terms-and-coditions">Agree to terms and contitions</label>
+    <input type="checkbox" name="terms-and-coditions" id="terms-and-coditions">
+    <label for="newsletter">Subscribe to our newsletter</label>
+    <input type="checkbox" name="newsletter" id="newsletter">
+  </fieldset>
+  
   <button type="submit">Skicka</button>
 </form>
 
