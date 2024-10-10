@@ -42,6 +42,7 @@ form {
 }
 
 .resume {
+    padding-top: 30px;
     grid-area: resume;
 }
 
