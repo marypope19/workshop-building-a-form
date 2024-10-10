@@ -1,0 +1,60 @@
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "firstname lastname"
+                          "email password"
+                          "birthdate workload"
+                          "cover-letter cover-letter"
+                          "resume resume"
+                          "checkboxes checkboxes"
+                          "button button";
+}
+
+.item {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstname {
+    grid-area: firstname;
+}
+
+.lastname {
+    grid-area: lastname;
+}
+
+.email {
+    grid-area: email;
+}
+
+.password {
+    grid-area: password;
+}
+
+.birthdate {
+    grid-area: birthdate;
+}
+
+.cover-letter {
+    grid-area: cover-letter;
+}
+
+.resume {
+    grid-area: resume;
+}
+
+.workload {
+    grid-area: workload;
+    display: block;
+}
+
+.checkboxes {
+    grid-area: checkboxes;
+    display: block;
+}
+
+.button {
+    grid-area: button;
+}
