@@ -1,0 +1,30 @@
+input, textarea {
+    outline: none;
+    /* border: 2px solid black; */
+    /* border-radius: 0.5rem; */
+    transition: border 0.6s;
+}
+
+input[type="date"],
+input[type="file"],
+input[type="radio"],
+input[type="checkbox"] {
+    
+}
+
+textarea {
+    resize: none;
+}
+
+input:hover,
+textarea:hover {
+    /* box-shadow: 0px 0px 0px 2px black; */
+    border-color: blue;
+    transition: border 0.2s;
+}
+
+input:focus, input:active,
+textarea:focus, textarea:active {
+    /* box-shadow: 0px 0px 0px 2px purple; */
+    border-color: red;
+}
