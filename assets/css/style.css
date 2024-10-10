@@ -1,4 +1,8 @@
+@import "resets.css";
+@import "variables.css";
+@import "base.css";
 @import "layout.css";
+@import "header.css";
 @import "input-effect.css";
 
 body {
